@@ -7,7 +7,6 @@ export default Ember.Route.extend({
       rentals: this.store.findAll('rental')
     });
   },
-
   actions: {
       save3(params) {
         var newRental= this.store.createRecord('rental', params);
